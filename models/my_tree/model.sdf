@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<sdf version="1.10">
+  <model name="my_tree">
+    <static>true</static>
+    <link name="link">
+      <visual name="trunk">
+        <geometry><cylinder><radius>0.2</radius><length>2.0</length></cylinder></geometry>
+        <material><ambient>0.4 0.2 0 1</ambient><diffuse>0.4 0.2 0 1</diffuse></material>
+      </visual>
+      <collision name="trunk_col">
+        <geometry><cylinder><radius>0.2</radius><length>2.0</length></cylinder></geometry>
+      </collision>
+      <visual name="leaves">
+        <pose>0 0 2.0 0 0 0</pose>
+        <geometry><cone><radius>1.5</radius><length>3.0</length></cone></geometry>
+        <material><ambient>0 0.5 0 1</ambient><diffuse>0 0.5 0 1</diffuse></material>
+      </visual>
+    </link>
+  </model>
+</sdf>
