@@ -52,7 +52,7 @@ Loads the 3D world and physics engine.
 
 ```bash
 export GZ_SIM_RESOURCE_PATH=~/drone_project_ws/src/drone_sim/models
-gz sim -r worlds/drone_world.sdf
+gz sim -r ~/drone_project_ws/src/drone_sim/worlds/drone_world.sdf
 ```
 
 ---
